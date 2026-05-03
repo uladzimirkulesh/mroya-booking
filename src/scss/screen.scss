@@ -1,0 +1,26 @@
+.section--hero-4 {
+	// height: 100dvh;
+
+	.wp-block-query {
+
+		.wp-block-post-template.is-layout-grid {
+			grid-template-columns: unset;
+
+			grid-auto-flow: column;
+			grid-auto-columns: 15%;
+			overflow-x: auto;
+			scrollbar-width: none;
+			overscroll-behavior-inline: contain;
+			// width: 100dvw;
+		}
+	}
+
+	// .section__content {
+	// 	padding-top: 0 !important;
+	// }
+}
+
+// html, body {
+// 	height: 100vh !important;
+// 	overflow-y: hidden;
+// }
