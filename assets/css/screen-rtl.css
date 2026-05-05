@@ -1,11 +1,74 @@
 /*!*********************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/screen.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************/
-.section--hero-4 .wp-block-query .wp-block-post-template.is-layout-grid {
-  grid-template-columns: unset;
-  grid-auto-flow: column;
-  grid-auto-columns: 15%;
-  overflow-x: auto;
-  scrollbar-width: none;
-  overscroll-behavior-inline: contain;
+/*-------------------------------------------------------
+Block Styles
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Navigation
+-------------------------------------------------------*/
+.wp-block-navigation.items-justified-right {
+  --navigation-layout-justification-setting: right;
+  --navigation-layout-justify: right;
+}
+.has-modal-open .wp-block-navigation.items-justified-right {
+  --navigation-layout-justification-setting: center;
+  --navigation-layout-justify: center;
+}
+/*-------------------------------------------------------
+Layout Styles
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Header (default)
+-------------------------------------------------------*/
+:root .wp-site-blocks > .header {
+  z-index: 100000;
+}
+@media only screen and (min-width: 960px) {
+  .header__inner .wp-block-navigation .wp-block-navigation__container > .wp-block-navigation-item:nth-last-child(1 of .wp-block-navigation-item) {
+    margin-right: 0;
+  }
+}
+/*-------------------------------------------------------
+Footer
+-------------------------------------------------------*/
+/*
+Footer links section
+*/
+.footer__links {
+  row-gap: 0.75rem;
+}
+/*-------------------------------------------------------
+Pattern Styles
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Section "Hero" (style 5)
+-------------------------------------------------------*/
+.section--hero-5 .section__content {
+  row-gap: var(--wp--preset--spacing--20);
+}
+@media only screen and (max-width: 959px) {
+  .section--hero-5 .section__content {
+    grid-template-columns: 1fr;
+  }
+}
+.section--hero-5 .section__block--left {
+  --wp--preset--font-size--huge: clamp(1.75rem, 3.5vw + 1.05rem, 5.25rem);
+  --wp--custom--typography--line-height--huge: clamp(2.125rem, 3.375vw + 1.45rem, 5.5rem);
+}
+@media only screen and (max-width: 959px) {
+  .section--hero-5 .section__block--left {
+    padding-left: 0 !important;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .section--hero-5 .section__block--right {
+    padding-top: clamp(10.5rem, 6vw + 9.3rem, 16.5rem);
+  }
+}
+@media only screen and (max-width: 959px) {
+  .section--hero-5 .section__block--right > * {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+  }
 }

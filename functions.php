@@ -47,3 +47,9 @@ function mroya_booking_enqueue_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'mroya_booking_enqueue_styles' );
+
+function mroya_booking_editor_styles() {
+	// Editor styles.
+	add_editor_style( get_stylesheet_directory_uri() . '/assets/css/screen.css' );
+}
+add_action( 'after_setup_theme', 'mroya_booking_editor_styles', 100 );

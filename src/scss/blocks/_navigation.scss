@@ -1,0 +1,24 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+Navigation
+-------------------------------------------------------*/
+
+.wp-block-navigation {
+
+	&.items-justified-right {
+		--navigation-layout-justification-setting: right;
+		--navigation-layout-justify: right;
+	}
+}
+
+.has-modal-open {
+
+	.wp-block-navigation {
+
+		&.items-justified-right {
+			--navigation-layout-justification-setting: center;
+			--navigation-layout-justify: center;
+		}
+	}
+}

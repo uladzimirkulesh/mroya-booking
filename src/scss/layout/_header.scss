@@ -1,0 +1,28 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+Header (default)
+-------------------------------------------------------*/
+
+:root .wp-site-blocks > .header {
+	z-index: 100000;
+}
+
+.header__inner {
+
+	.wp-block-navigation {
+
+		.wp-block-navigation__container {
+
+			> .wp-block-navigation-item {
+
+				&:nth-last-child(1 of .wp-block-navigation-item) {
+
+					@include mixins.media("break-large") {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+Section "Hero" (style 5)
+-------------------------------------------------------*/
+
+.section--hero-5 {
+
+	.section {
+
+		&__content {
+			row-gap: var(--wp--preset--spacing--20);
+
+			@include mixins.media("break-large", max) {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&__block {
+
+			&--left {
+				--wp--preset--font-size--huge: clamp(1.75rem, 3.5vw + 1.05rem, 5.25rem);
+				--wp--custom--typography--line-height--huge: clamp(2.125rem, 3.375vw + 1.45rem, 5.5rem);
+
+				@include mixins.media("break-large", max) {
+					padding-right: 0 !important;
+				}
+			}
+
+			&--right {
+
+				@include mixins.media("break-large") {
+					padding-top: clamp(10.5rem, 6vw + 9.3rem, 16.5rem);
+				}
+
+				> * {
+
+					@include mixins.media("break-large", max) {
+						margin-left: 0 !important;
+						margin-right: auto !important;
+					}
+				}
+			}
+		}
+	}
+}
