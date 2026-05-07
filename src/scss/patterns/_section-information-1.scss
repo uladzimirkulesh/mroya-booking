@@ -1,0 +1,58 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+Section "Information" (style 1)
+-------------------------------------------------------*/
+
+.section--information-1 {
+
+	.section__content {
+		row-gap: var(--wp--preset--spacing--40);
+
+		@include mixins.media("break-medium", max) {
+			grid-template-columns: 1fr;
+			padding-bottom: var(--wp--preset--spacing--40) !important;
+		}
+
+		@include mixins.media("break-xlarge", max) {
+			column-gap: var(--wp--preset--spacing--20);
+		}
+	}
+
+	.block {
+
+		&--adress {
+
+			@include mixins.media("break-medium", max) {
+				grid-column: span 1;
+			}
+
+			@include mixins.media("break-medium") {
+				grid-column: span 2;
+			}
+
+			@include mixins.media("break-xlarge") {
+				grid-column: span 3;
+			}
+
+			@include mixins.media("break-xlarge", max) {
+				padding-right: 0 !important;
+			}
+
+			> * {
+				max-width: 100%;
+			}
+		}
+
+		&--working-hours {
+
+			@include mixins.media("break-medium") {
+				grid-column: span 2;
+			}
+
+			@include mixins.media("break-xlarge") {
+				grid-column: span 1;
+			}
+		}
+	}
+}

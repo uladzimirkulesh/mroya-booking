@@ -1,0 +1,40 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+Section "About" (style 2)
+-------------------------------------------------------*/
+
+.section--about-2 {
+
+	.advantages {
+
+		@include mixins.media("break-medium", max) {
+			grid-template-columns: 1fr;
+		}
+
+		&__item {
+
+			> * {
+
+				@include mixins.media("break-medium", max) {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+
+	.block--text {
+
+		@include mixins.media("break-large", max) {
+			grid-template-columns: 1fr;
+		}
+
+		> * {
+			grid-column: 2 /span 2;
+
+			@include mixins.media("break-large", max) {
+				grid-column: span 1;
+			}
+		}
+	}
+}
