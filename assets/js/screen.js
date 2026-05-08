@@ -1,7 +1,1 @@
-/******/ (() => { // webpackBootstrap
-/*!**************************!*\
-  !*** ./src/js/screen.js ***!
-  \**************************/
-
-/******/ })()
-;
+(()=>{"use strict";window.addEventListener("load",()=>{gsap.utils.toArray(".section--hero-5").forEach(e=>{const t=e.querySelector(".section__block--left .wp-block-heading"),o=e.querySelectorAll(".section__block--right > *"),r=gsap.timeline({delay:.3});t&&r.set(t,{autoAlpha:1}),t&&r.splitTextLinesMask(t,{revert:!1}),o?.length&&r.fadeInUp(o,"<0.42")}),gsap.utils.toArray(".section--about-2").forEach(e=>{const t=e.querySelector(".section__header .wp-block-heading"),o=e.querySelectorAll(".advantages__item"),r=e.querySelectorAll(".block--text > .wp-block-group > *"),l=e.querySelector(".block--text > .wp-block-group > p"),n=gsap.timeline({scrollTrigger:{trigger:t,start:ScrollTrigger.defaults().start,toggleActions:"play none none none",once:!0}});t&&n.fadeInUp(t),o?.length&&n.fadeInUp(o,"<0.12"),r?.length&&n.fadeInUp(r,"<0.12"),l&&n.splitTextWords(l)}),gsap.utils.toArray(".section--information-1").forEach(e=>{const t=e.querySelectorAll(".section__content > *"),o=gsap.timeline({scrollTrigger:{trigger:e,start:ScrollTrigger.defaults().start,toggleActions:"play none none none",once:!0}});t?.length&&o.fadeInUp(t,"<0.12")})})})();

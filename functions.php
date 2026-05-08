@@ -14,7 +14,11 @@
  */
 
 function mroya_booking_enqueue_styles() {
-	// Parent Theme stylesheet.
+
+	wp_dequeue_style( 'mroya-screen' );
+	wp_deregister_style( 'mroya-screen' );
+
+	// Perrent theme stylesheets.
 	wp_enqueue_style(
 		'mroya-screen',
 		get_parent_theme_file_uri( 'assets/css/screen.css' ),
@@ -22,7 +26,7 @@ function mroya_booking_enqueue_styles() {
 		wp_get_theme()->get( 'Version' )
 	);
 
-	// Child Theme stylesheet.
+	// Child theme stylesheet.
 	wp_enqueue_style(
 		'mroya-booking-style',
 		get_stylesheet_directory_uri() . '/style.css',
@@ -37,19 +41,24 @@ function mroya_booking_enqueue_styles() {
 		wp_get_theme()->get( 'Version' )
 	);
 
-	// Child Theme scripts.
-	wp_enqueue_script(
-		'mroya-booking-screen',
-		get_stylesheet_directory_uri() . '/assets/js/screen.js',
-		array( 'mroya-screen' ),
-		wp_get_theme()->get( 'Version' ),
-		true
-	);
+	// Child theme scripts.
+	if ( wp_script_is( 'mroya-premium-screen', 'registered' ) ) {
+
+		wp_enqueue_script(
+			'mroya-booking-screen',
+			get_stylesheet_directory_uri() . '/assets/js/screen.js',
+			array( 'mroya-premium-screen' ),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+	}
 }
-add_action( 'wp_enqueue_scripts', 'mroya_booking_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'mroya_booking_enqueue_styles', 20 );
 
 function mroya_booking_editor_styles() {
+
 	// Editor styles.
+	add_editor_style( get_parent_theme_file_uri() . '/assets/css/screen.css' );
 	add_editor_style( get_stylesheet_directory_uri() . '/assets/css/screen.css' );
 }
 add_action( 'after_setup_theme', 'mroya_booking_editor_styles', 100 );

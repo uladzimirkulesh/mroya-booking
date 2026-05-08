@@ -17,7 +17,7 @@
 <div class="wp-block-group header__inner has-global-padding">
 	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}},"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
 	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)">
-		<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Site Branding', 'Name for the site branding part', 'mroya' ); ?>"},"className":"site-branding","style":{"spacing":{"blockGap":"1rem"},"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+		<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Site Branding', 'Name for the site branding part', 'mroya-booking' ); ?>"},"className":"site-branding","style":{"spacing":{"blockGap":"1rem"},"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 		<div class="wp-block-group site-branding">
 			<!-- wp:site-logo {"width":32,"shouldSyncIcon":true,"className":"is-style-rounded"} /-->
 			<!-- wp:site-title {"level":0} /-->

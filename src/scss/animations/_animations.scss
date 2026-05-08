@@ -1,0 +1,27 @@
+/*-------------------------------------------------------
+GSAP animations
+-------------------------------------------------------*/
+
+body:not(.editor-styles-wrapper) {
+
+	.section--hero-5 .section__block--left .wp-block-heading,
+	.section--hero-5 .section__block--right > *,
+	.section--about-2 .section__header .wp-block-heading,
+	.section--about-2 .advantages__item,
+	.section--about-2 .block--text > .wp-block-group > *,
+	.section--about-2 .block--text > .wp-block-group > p,
+	.section--information-1 .section__content > * {
+		visibility: hidden;
+	}
+
+	.section__block--left .wp-block-heading {
+
+		.line {
+			margin-bottom: -0.1em;
+		}
+
+		.word {
+			padding-bottom: 0.1em;
+		}
+	}
+}

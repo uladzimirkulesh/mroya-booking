@@ -23,9 +23,13 @@
 			<h2 class="wp-block-heading"><?php echo esc_html_x( 'Adresse', 'Adress block title', 'mroya-booking' ); ?></h2>
 			<!-- /wp:heading -->
 
-			<!-- wp:html -->
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.6059418302975!2d9.477903876552336!3d47.16557167115283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b31b7e74ef6ed%3A0xfe1c83b6778fef6c!2zRmljaHRlbndlZyAxMCwgOTQ3MCBCdWNocywg0KjQstC10LnRhtCw0YDQuNGP!5e0!3m2!1sru!2scz!4v1778081346179!5m2!1sru!2scz" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			<!-- /wp:html -->
+			<!-- wp:group {"className":"block__map","layout":{"type":"default"}} -->
+			<div class="wp-block-group block__map">
+				<!-- wp:html -->
+				<script src="https://cdn.anny.co/widget/annyComponents.umd.latest.min.js"></script><a-resource-map base-url="https://anny.co" locale="de" resource="dreischwestern" placeholder-title="Drei Schwestern" height="500px" primary-color="#874efe" secondary-color="#ffffff" primary-color-rgb="135, 78, 254" primary-color-hover="#9c6cfe" panel-background-rgb="254, 252, 221" primary-color-overlay="rgba(135, 78, 254, 0.14)" secondary-inverted-color="#000000"></a-resource-map>
+				<!-- /wp:html -->
+			</div>
+			<!-- /wp:group -->
 
 			<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-3"}}}},"textColor":"contrast-3","fontSize":"small"} -->
 			<p class="has-contrast-3-color has-text-color has-link-color has-small-font-size"><?php echo esc_html_x( 'Adresse: Fichtenweg 10, 9470 Buchs SG.', 'Adress block text', 'mroya-booking' ); ?></p>
