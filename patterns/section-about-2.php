@@ -17,8 +17,8 @@
 <section class="wp-block-group alignfull section section--about-2" id="section-about-2" style="margin-top:0;padding-top:2rem;padding-bottom:var(--wp--preset--spacing--30)">
 	<!-- wp:group {"tagName":"header","metadata":{"name":"<?php echo esc_html_x( 'Header', 'Name for the section header area', 'mroya-booking' ); ?>"},"align":"wide","className":"section__header","layout":{"type":"default"}} -->
 	<header class="wp-block-group alignwide section__header">
-		<!-- wp:heading {"fontSize":"xx-large"} -->
-		<h2 class="wp-block-heading has-xx-large-font-size"><?php echo esc_html_x( 'Eckdaten', 'About section title', 'mroya-booking' ); ?></h2>
+		<!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|accent-2"}}}},"textColor":"accent-2","fontSize":"xx-large"} -->
+		<h2 class="wp-block-heading has-accent-2-color has-text-color has-link-color has-xx-large-font-size"><?php echo esc_html_x( 'Eckdaten', 'About section title', 'mroya-booking' ); ?></h2>
 		<!-- /wp:heading -->
 	</header>
 	<!-- /wp:group -->
@@ -29,8 +29,8 @@
 		<div class="wp-block-group advantages">
 			<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Item', 'Name for the section advantages item area', 'mroya-booking' ); ?>"},"className":"advantages__item","style":{"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem","left":"2rem"}},"border":{"left":{"color":"var:preset|color|contrast-4","style":"solid","width":"2px"},"top":{},"right":{},"bottom":{}}},"layout":{"type":"constrained","contentSize":"340px","justifyContent":"left","wideSize":"100%"}} -->
 			<div class="wp-block-group advantages__item" style="border-left-color:var(--wp--preset--color--contrast-4);border-left-style:solid;border-left-width:2px;padding-top:0.5rem;padding-bottom:0.5rem;padding-left:2rem">
-				<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","letterSpacing":"-0.01em"}},"fontSize":"medium"} -->
-				<p class="has-medium-font-size" style="font-style:normal;font-weight:500;letter-spacing:-0.01em"><?php echo esc_html_x( '37 m2', 'Advantages item title', 'mroya-booking' ); ?></p>
+				<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","letterSpacing":"-0.01em"},"elements":{"link":{"color":{"text":"var:preset|color|accent-3"}}}},"textColor":"accent-3","fontSize":"medium"} -->
+				<p class="has-accent-3-color has-text-color has-link-color has-medium-font-size" style="font-style:normal;font-weight:500;letter-spacing:-0.01em"><?php echo esc_html_x( '37 m2', 'Advantages item title', 'mroya-booking' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:paragraph -->
@@ -41,8 +41,8 @@
 
 			<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Item', 'Name for the section advantages item area', 'mroya-booking' ); ?>"},"className":"advantages__item","style":{"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem","left":"2rem"}},"border":{"left":{"color":"var:preset|color|contrast-4","style":"solid","width":"2px"},"top":{},"right":{},"bottom":{}}},"layout":{"type":"constrained","contentSize":"340px","justifyContent":"left","wideSize":"100%"}} -->
 			<div class="wp-block-group advantages__item" style="border-left-color:var(--wp--preset--color--contrast-4);border-left-style:solid;border-left-width:2px;padding-top:0.5rem;padding-bottom:0.5rem;padding-left:2rem">
-				<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","letterSpacing":"-0.01em"}},"fontSize":"medium"} -->
-				<p class="has-medium-font-size" style="font-style:normal;font-weight:500;letter-spacing:-0.01em"><?php echo esc_html_x( 'Bis zu 12 Personen', 'Advantages item title', 'mroya-booking' ); ?></p>
+				<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","letterSpacing":"-0.01em"},"elements":{"link":{"color":{"text":"var:preset|color|accent-3"}}}},"textColor":"accent-3","fontSize":"medium"} -->
+				<p class="has-accent-3-color has-text-color has-link-color has-medium-font-size" style="font-style:normal;font-weight:500;letter-spacing:-0.01em"><?php echo esc_html_x( 'Bis zu 12 Personen', 'Advantages item title', 'mroya-booking' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:paragraph -->
@@ -53,8 +53,8 @@
 
 			<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Item', 'Name for the section advantages item area', 'mroya-booking' ); ?>"},"className":"advantages__item","style":{"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem","left":"2rem"}},"border":{"left":{"color":"var:preset|color|contrast-4","style":"solid","width":"2px"},"top":{},"right":{},"bottom":{}}},"layout":{"type":"constrained","contentSize":"340px","justifyContent":"left","wideSize":"100%"}} -->
 			<div class="wp-block-group advantages__item" style="border-left-color:var(--wp--preset--color--contrast-4);border-left-style:solid;border-left-width:2px;padding-top:0.5rem;padding-bottom:0.5rem;padding-left:2rem">
-				<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","letterSpacing":"-0.01em"}},"fontSize":"medium"} -->
-				<p class="has-medium-font-size" style="font-style:normal;font-weight:500;letter-spacing:-0.01em"><?php echo esc_html_x( 'Flexibel nutzbar', 'Advantages item title', 'mroya-booking' ); ?></p>
+				<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","letterSpacing":"-0.01em"},"elements":{"link":{"color":{"text":"var:preset|color|accent-3"}}}},"textColor":"accent-3","fontSize":"medium"} -->
+				<p class="has-accent-3-color has-text-color has-link-color has-medium-font-size" style="font-style:normal;font-weight:500;letter-spacing:-0.01em"><?php echo esc_html_x( 'Flexibel nutzbar', 'Advantages item title', 'mroya-booking' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:paragraph -->

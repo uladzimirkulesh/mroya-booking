@@ -1,4 +1,165 @@
 {
 	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
-	"version": 3
+	"version": 3,
+	"settings": {
+		"custom": {
+			"color": {
+				"background": "var:preset|color|accent",
+				"cursor": "var:preset|color|base",
+				"sidebar": {
+					"background": "var:preset|color|accent"
+				},
+				"base": "#202020",
+				"contrast": "#ffffff",
+				"contrast-2": "color-mix(in srgb, #ffffff 75%, transparent)",
+				"contrast-3": "color-mix(in srgb, #ffffff 47%, transparent)",
+				"contrast-4": "color-mix(in srgb, #ffffff 15%, transparent)",
+				"contrast-5": "color-mix(in srgb, #ffffff 3%, transparent)"
+			}
+		},
+		"color": {
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#202020",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "color-mix(in srgb, #202020 95%, transparent)",
+					"name": "Contrast / Two",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "color-mix(in srgb, #202020 57%, transparent)",
+					"name": "Contrast / Three",
+					"slug": "contrast-3"
+				},
+				{
+					"color": "color-mix(in srgb, #202020 14%, transparent)",
+					"name": "Contrast / Four",
+					"slug": "contrast-4"
+				},
+				{
+					"color": "color-mix(in srgb, #202020 2%, transparent)",
+					"name": "Contrast / Five",
+					"slug": "contrast-5"
+				},
+				{
+					"color": "#f7f6ee",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "#864bfd",
+					"name": "Accent / Two",
+					"slug": "accent-2"
+				},
+				{
+					"color": "#d21989",
+					"name": "Accent / Three",
+					"slug": "accent-3"
+				},
+				{
+					"color": "#df042d",
+					"name": "Danger",
+					"slug": "danger"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "font-primary",
+					"name": "Inter",
+					"fontFamily": "Inter, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/inter/InterVariable.woff2"
+							]
+						},
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "italic",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/inter/InterVariable-Italic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"slug": "font-monospace",
+					"name": "Monospace Font",
+					"fontFamily": "ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"text": "var:preset|color|base",
+					"background": "var:preset|color|accent-2"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|font-primary",
+					"fontSize": "var:preset|font-size|normal",
+					"fontWeight": "500",
+					"lineHeight": "var:style|block-gap",
+					"letterSpacing": "-0.01em"
+				},
+				"border": {
+					"width": "2px",
+					"style": "solid",
+					"color": "var:preset|color|accent-2",
+					"radius": "3rem"
+				},
+				"spacing": {
+					"padding": {
+						"top": "0.5rem",
+						"right": "1.125rem",
+						"bottom": "0.5rem",
+						"left": "1.125rem"
+					}
+				},
+				":hover": {
+					"color": {
+						"text": "var:preset|color|accent-2",
+						"background": "transparent"
+					},
+					"typography": {
+						"textDecoration": "none"
+					}
+				},
+				":focus": {
+					"color": {
+						"text": "var:preset|color|accent-2",
+						"background": "transparent"
+					},
+					"typography": {
+						"textDecoration": "none"
+					}
+				},
+				":active": {
+					"color": {
+						"text": "var:preset|color|accent-2",
+						"background": "transparent"
+					},
+					"typography": {
+						"textDecoration": "none"
+					}
+				}
+			}
+		}
+	}
 }
