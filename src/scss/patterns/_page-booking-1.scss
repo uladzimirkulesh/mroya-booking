@@ -1,0 +1,16 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+Booking page (style 1)
+-------------------------------------------------------*/
+
+.page--booking-1 {
+
+	.booking {
+
+		&__information .block--subtitle > p {
+			--wp--preset--font-size--huge: clamp(2.25rem, 2.8125vw + 1.6875rem, 4.5rem);
+			--wp--custom--typography--line-height--huge: clamp(2.5rem, 2.96875vw + 1.90625rem, 4.875rem);
+		}
+	}
+}
