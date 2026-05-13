@@ -62,3 +62,16 @@ function mroya_booking_editor_styles() {
 	add_editor_style( get_stylesheet_directory_uri() . '/assets/css/screen.css' );
 }
 add_action( 'after_setup_theme', 'mroya_booking_editor_styles', 100 );
+
+/**
+ * Remove magic cursor HTML in the top of the body tag.
+ *
+ * @since Mroya Booking 1.0.0
+ */
+function mroya_booking_remove_magic_cursor() {
+	remove_action(
+		'wp_body_open',
+		'mroya_premium_magic_cursor'
+	);
+}
+add_action( 'after_setup_theme', 'mroya_booking_remove_magic_cursor', 20 );

@@ -65,6 +65,21 @@
 					"slug": "accent-3"
 				},
 				{
+					"color": "#f49b9d",
+					"name": "Accent / Four",
+					"slug": "accent-4"
+				},
+				{
+					"color": "#d3645e",
+					"name": "Accent / Five",
+					"slug": "accent-5"
+				},
+				{
+					"color": "#e8b723",
+					"name": "Accent / Six",
+					"slug": "accent-6"
+				},
+				{
 					"color": "#df042d",
 					"name": "Danger",
 					"slug": "danger"
@@ -161,37 +176,5 @@
 				}
 			}
 		}
-	},
-	"customTemplates": [
-		{
-			"name": "blank",
-			"postTypes": [ "page" ],
-			"title": "Blank template"
-		},
-		{
-			"name": "blank-2",
-			"postTypes": [ "page" ],
-			"title": "Blank template (style 2)"
-		},
-		{
-			"name": "single-uk-project",
-			"postTypes": [ "none" ],
-			"title": "Single projects"
-		},
-		{
-			"name": "archive-uk-project",
-			"postTypes": [ "none" ],
-			"title": "Portfolio"
-		},
-		{
-			"name": "taxonomy-uk-project_category",
-			"postTypes": [ "none" ],
-			"title": "Portfolio category archive"
-		},
-		{
-			"name": "taxonomy-uk-project_tag",
-			"postTypes": [ "none" ],
-			"title": "Portfolio tag archive"
-		}
-	]
+	}
 }

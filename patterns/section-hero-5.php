@@ -19,16 +19,16 @@
 	<div class="wp-block-group alignwide section__content">
 		<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Left Block', 'Name for the section block area', 'mroya-booking' ); ?>"},"className":"section__block--left","style":{"layout":{"columnSpan":3},"spacing":{"padding":{"right":"var:preset|spacing|30"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group section__block--left" style="padding-right:var(--wp--preset--spacing--30)">
-			<!-- wp:heading {"level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|accent-2"}}}},"textColor":"accent-2","fontSize":"huge"} -->
-			<h1 class="wp-block-heading has-accent-2-color has-text-color has-link-color has-huge-font-size"><?php echo esc_html_x( 'Eventraum für Workshops & Meetings. Für Formate, die mehr brauchen als vier Wände.', 'Hero section title', 'mroya-booking' ); ?></h1>
+			<!-- wp:heading {"level":1,"fontSize":"huge"} -->
+			<h1 class="wp-block-heading has-huge-font-size"><?php echo esc_html_x( 'Eventraum für Workshops & Meetings. Für Formate, die mehr brauchen als vier Wände.', 'Hero section title', 'mroya-booking' ); ?></h1>
 			<!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->
 
 		<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Right Block', 'Name for the section block area', 'mroya-booking' ); ?>"},"className":"section__block--right","style":{"layout":{"columnSpan":1}},"layout":{"type":"constrained","contentSize":"320px","wideSize":"100%","justifyContent":"right"}} -->
 		<div class="wp-block-group section__block--right">
-			<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|accent-3"}}}},"textColor":"accent-3"} -->
-			<p class="has-accent-3-color has-text-color has-link-color"><?php echo esc_html_x( 'Für Austausch, Zusammenarbeit und Begegnung - in Buchs (SG).', 'Hero section text', 'mroya-booking' ); ?></p>
+			<!-- wp:paragraph {"fontSize":"medium"} -->
+			<p class="has-medium-font-size"><?php echo esc_html_x( 'Für Austausch, Zusammenarbeit und Begegnung - in Buchs (SG).', 'Hero section text', 'mroya-booking' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons -->

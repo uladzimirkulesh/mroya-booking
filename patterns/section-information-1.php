@@ -13,15 +13,19 @@
  */
 
 ?>
-<!-- wp:group {"tagName":"section","metadata":{"name":"<?php echo esc_html_x( 'Information (style 1)', 'Name for the Information section pattern', 'mroya-booking' ); ?>"},"align":"full","className":"section section--information-1","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60","top":"2rem"},"margin":{"top":"0"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull section section--information-1" id="section-information-1" style="margin-top:0;padding-top:2rem;padding-bottom:var(--wp--preset--spacing--60)">
-	<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Content', 'Name for the section content area', 'mroya-booking' ); ?>"},"align":"wide","className":"section__content","style":{"border":{"top":{"color":"var:preset|color|contrast-4","style":"solid","width":"1px"}},"spacing":{"padding":{"bottom":"var:preset|spacing|10","top":"2rem"}}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
-	<div class="wp-block-group alignwide section__content" style="border-top-color:var(--wp--preset--color--contrast-4);border-top-style:solid;border-top-width:1px;padding-top:2rem;padding-bottom:var(--wp--preset--spacing--10)">
+<!-- wp:group {"tagName":"section","metadata":{"name":"<?php echo esc_html_x( 'Information (style 1)', 'Name for the Information section pattern', 'mroya-booking' ); ?>"},"align":"full","className":"section section--information-1","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60","top":"2rem"},"margin":{"top":"0"},"blockGap":"var:preset|spacing|20"}},"backgroundColor":"accent-4","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull section section--information-1 has-accent-4-background-color has-background" id="section-information-1" style="margin-top:0;padding-top:2rem;padding-bottom:var(--wp--preset--spacing--60)">
+	<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Content', 'Name for the section content area', 'mroya-booking' ); ?>"},"align":"wide","className":"section__content","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
+	<div class="wp-block-group alignwide section__content">
 		<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Adress', 'Name for the adress block area', 'mroya-booking' ); ?>"},"className":"block--adress","style":{"layout":{"columnSpan":3},"spacing":{"padding":{"right":"var:preset|spacing|20"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group block--adress" style="padding-right:var(--wp--preset--spacing--20)">
 			<!-- wp:heading -->
 			<h2 class="wp-block-heading"><?php echo esc_html_x( 'Adresse', 'Adress block title', 'mroya-booking' ); ?></h2>
 			<!-- /wp:heading -->
+
+			<!-- wp:paragraph {"fontSize":"normal"} -->
+			<p class="has-normal-font-size"><?php echo esc_html_x( 'Fichtenweg 10, 9470 Buchs SG.', 'Adress block text', 'mroya-booking' ); ?></p>
+			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"className":"block__map","layout":{"type":"default"}} -->
 			<div class="wp-block-group block__map">
@@ -30,10 +34,6 @@
 				<!-- /wp:html -->
 			</div>
 			<!-- /wp:group -->
-
-			<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-3"}}}},"textColor":"contrast-3","fontSize":"small"} -->
-			<p class="has-contrast-3-color has-text-color has-link-color has-small-font-size"><?php echo esc_html_x( 'Adresse: Fichtenweg 10, 9470 Buchs SG.', 'Adress block text', 'mroya-booking' ); ?></p>
-			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 
