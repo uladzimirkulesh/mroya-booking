@@ -1,1 +1,181 @@
-.wp-block-navigation.items-justified-right{--navigation-layout-justification-setting:right;--navigation-layout-justify:right}.has-modal-open .wp-block-navigation.items-justified-right{--navigation-layout-justification-setting:center;--navigation-layout-justify:center}:root .wp-site-blocks>.header{z-index:100000}@media only screen and (min-width:960px){.header__inner .wp-block-navigation .wp-block-navigation__container>.wp-block-navigation-item:nth-last-child(1 of .wp-block-navigation-item){margin-left:0}}.footer__links{row-gap:.75rem}.section--hero-5 .section__content{row-gap:var(--wp--preset--spacing--20)}@media only screen and (max-width:959px){.section--hero-5 .section__content{grid-template-columns:1fr}}.section--hero-5 .section__block--left{--wp--preset--font-size--huge:clamp(1.75rem,3.5vw + 1.05rem,5.25rem);--wp--custom--typography--line-height--huge:clamp(2.125rem,3.375vw + 1.45rem,5.5rem)}@media only screen and (max-width:959px){.section--hero-5 .section__block--left{padding-right:0!important}}@media only screen and (min-width:960px){.section--hero-5 .section__block--right{padding-top:clamp(10.5rem,6vw + 9.3rem,16.5rem)}}@media only screen and (max-width:959px){.section--hero-5 .section__block--right>*{margin-left:0!important;margin-right:auto!important}}@media only screen and (max-width:781px){.section--about-2 .advantages{grid-template-columns:1fr}.section--about-2 .advantages__item>*{max-width:100%}}@media only screen and (max-width:959px){.section--about-2 .block--text{grid-template-columns:1fr}}.section--about-2 .block--text>*{grid-column:2/span 2}@media only screen and (max-width:959px){.section--about-2 .block--text>*{grid-column:span 1}}.section--information-1 .section__content{row-gap:var(--wp--preset--spacing--40)}@media only screen and (max-width:781px){.section--information-1 .section__content{grid-template-columns:1fr;padding-bottom:var(--wp--preset--spacing--40)!important}}@media only screen and (max-width:1079px){.section--information-1 .section__content{-moz-column-gap:var(--wp--preset--spacing--20);column-gap:var(--wp--preset--spacing--20)}}@media only screen and (max-width:781px){.section--information-1 .block--adress{grid-column:span 1}}@media only screen and (min-width:782px){.section--information-1 .block--adress{grid-column:span 2}}@media only screen and (min-width:1080px){.section--information-1 .block--adress{grid-column:span 3}}@media only screen and (max-width:1079px){.section--information-1 .block--adress{padding-right:0!important}}.section--information-1 .block--adress>*{max-width:100%}@media only screen and (min-width:782px){.section--information-1 .block--working-hours{grid-column:span 2}}@media only screen and (min-width:1080px){.section--information-1 .block--working-hours{grid-column:span 1}}.page--booking-1 .booking__information .block--subtitle>p{--wp--preset--font-size--huge:clamp(2.25rem,2.8125vw + 1.6875rem,4.5rem);--wp--custom--typography--line-height--huge:clamp(2.5rem,2.96875vw + 1.90625rem,4.875rem)}body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .advantages__item,body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .block--text>.wp-block-group>*,body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .block--text>.wp-block-group>p,body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .section__header .wp-block-heading,body.mroya-premium:not(.editor-styles-wrapper) .section--hero-5 .section__block--left .wp-block-heading,body.mroya-premium:not(.editor-styles-wrapper) .section--hero-5 .section__block--right>*,body.mroya-premium:not(.editor-styles-wrapper) .section--information-1 .section__content>*{visibility:hidden}body.mroya-premium:not(.editor-styles-wrapper) .section__block--left .wp-block-heading .line{margin-bottom:-.1em}body.mroya-premium:not(.editor-styles-wrapper) .section__block--left .wp-block-heading .word{padding-bottom:.1em}
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/screen.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+/*-------------------------------------------------------
+Block Styles
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Navigation
+-------------------------------------------------------*/
+.wp-block-navigation.items-justified-right {
+  --navigation-layout-justification-setting: right;
+  --navigation-layout-justify: right;
+}
+.has-modal-open .wp-block-navigation.items-justified-right {
+  --navigation-layout-justification-setting: center;
+  --navigation-layout-justify: center;
+}
+/*-------------------------------------------------------
+Layout Styles
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Header (default)
+-------------------------------------------------------*/
+:root .wp-site-blocks > .header {
+  z-index: 100000;
+}
+@media only screen and (min-width: 960px) {
+  .header__inner .wp-block-navigation .wp-block-navigation__container > .wp-block-navigation-item:nth-last-child(1 of .wp-block-navigation-item) {
+    margin-left: 0;
+  }
+}
+/*-------------------------------------------------------
+Footer
+-------------------------------------------------------*/
+/*
+Footer links section
+*/
+.footer__links {
+  row-gap: 0.75rem;
+}
+/*-------------------------------------------------------
+Pattern Styles
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Section "Hero" (style 5)
+-------------------------------------------------------*/
+.section--hero-5 .section__content {
+  row-gap: var(--wp--preset--spacing--20);
+}
+@media only screen and (max-width: 959px) {
+  .section--hero-5 .section__content {
+    grid-template-columns: 1fr;
+  }
+}
+.section--hero-5 .section__block--left {
+  --wp--preset--font-size--huge: clamp(1.75rem, 3.5vw + 1.05rem, 5.25rem);
+  --wp--custom--typography--line-height--huge: clamp(2.125rem, 3.375vw + 1.45rem, 5.5rem);
+}
+@media only screen and (max-width: 959px) {
+  .section--hero-5 .section__block--left {
+    padding-right: 0 !important;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .section--hero-5 .section__block--right {
+    padding-top: clamp(10.5rem, 6vw + 9.3rem, 16.5rem);
+  }
+}
+@media only screen and (max-width: 959px) {
+  .section--hero-5 .section__block--right > * {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}
+/*-------------------------------------------------------
+Section "About" (style 2)
+-------------------------------------------------------*/
+@media only screen and (max-width: 781px) {
+  .section--about-2 .advantages {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 781px) {
+  .section--about-2 .advantages__item > * {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .section--about-2 .block--text {
+    grid-template-columns: 1fr;
+  }
+}
+.section--about-2 .block--text > * {
+  grid-column: 2/span 2;
+}
+@media only screen and (max-width: 959px) {
+  .section--about-2 .block--text > * {
+    grid-column: span 1;
+  }
+}
+/*-------------------------------------------------------
+Section "Information" (style 1)
+-------------------------------------------------------*/
+.section--information-1 .section__content {
+  row-gap: var(--wp--preset--spacing--40);
+}
+@media only screen and (max-width: 781px) {
+  .section--information-1 .section__content {
+    grid-template-columns: 1fr;
+    padding-bottom: var(--wp--preset--spacing--40) !important;
+  }
+}
+@media only screen and (max-width: 1079px) {
+  .section--information-1 .section__content {
+    -moz-column-gap: var(--wp--preset--spacing--20);
+         column-gap: var(--wp--preset--spacing--20);
+  }
+}
+@media only screen and (max-width: 781px) {
+  .section--information-1 .block--adress {
+    grid-column: span 1;
+  }
+}
+@media only screen and (min-width: 782px) {
+  .section--information-1 .block--adress {
+    grid-column: span 2;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .section--information-1 .block--adress {
+    grid-column: span 3;
+  }
+}
+@media only screen and (max-width: 1079px) {
+  .section--information-1 .block--adress {
+    padding-right: 0 !important;
+  }
+}
+.section--information-1 .block--adress > * {
+  max-width: 100%;
+}
+@media only screen and (min-width: 782px) {
+  .section--information-1 .block--working-hours {
+    grid-column: span 2;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .section--information-1 .block--working-hours {
+    grid-column: span 1;
+  }
+}
+/*-------------------------------------------------------
+Booking page (style 1)
+-------------------------------------------------------*/
+.page--booking-1 .booking__information .block--subtitle > p {
+  --wp--preset--font-size--huge: clamp(2.25rem, 2.8125vw + 1.6875rem, 4.5rem);
+  --wp--custom--typography--line-height--huge: clamp(2.5rem, 2.96875vw + 1.90625rem, 4.875rem);
+}
+/*-------------------------------------------------------
+Animations
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+GSAP animations
+-------------------------------------------------------*/
+body.mroya-premium:not(.editor-styles-wrapper) .section--hero-5 .section__block--left .wp-block-heading,
+body.mroya-premium:not(.editor-styles-wrapper) .section--hero-5 .section__block--right > *,
+body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .section__header .wp-block-heading,
+body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .advantages__item,
+body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .block--text > .wp-block-group > *,
+body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .block--text > .wp-block-group > p,
+body.mroya-premium:not(.editor-styles-wrapper) .section--information-1 .section__content > * {
+  visibility: hidden;
+}
+body.mroya-premium:not(.editor-styles-wrapper) .section__block--left .wp-block-heading .line {
+  margin-bottom: -0.1em;
+}
+body.mroya-premium:not(.editor-styles-wrapper) .section__block--left .wp-block-heading .word {
+  padding-bottom: 0.1em;
+}
+
+/*# sourceMappingURL=screen.css.map*/
