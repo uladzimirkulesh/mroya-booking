@@ -1,0 +1,49 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+About me page (style 1)
+-------------------------------------------------------*/
+
+.page--about-me-1 {
+
+	.block {
+
+		&--subtitle {
+
+			> p {
+				--wp--preset--font-size--huge: clamp(2.25rem, 2.8125vw + 1.6875rem, 4.5rem);
+				--wp--custom--typography--line-height--huge: clamp(2.5rem, 2.96875vw + 1.90625rem, 4.875rem);
+			}
+		}
+
+		&--text-1 {
+
+			@include mixins.media("break-large", max) {
+				grid-template-columns: 1fr;
+			}
+
+			> * {
+				grid-column: 2 / span 1;
+
+				@include mixins.media("break-large", max) {
+					grid-column: span 1;
+				}
+			}
+		}
+
+		&--text-2 {
+
+			@include mixins.media("break-large", max) {
+				grid-template-columns: 1fr;
+			}
+
+			> * {
+				grid-column: 2 /span 2;
+
+				@include mixins.media("break-large", max) {
+					grid-column: span 1;
+				}
+			}
+		}
+	}
+}

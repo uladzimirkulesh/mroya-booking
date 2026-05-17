@@ -157,6 +157,39 @@ Booking page (style 1)
   --wp--custom--typography--line-height--huge: clamp(2.5rem, 2.96875vw + 1.90625rem, 4.875rem);
 }
 /*-------------------------------------------------------
+About me page (style 1)
+-------------------------------------------------------*/
+.page--about-me-1 .block--subtitle > p {
+  --wp--preset--font-size--huge: clamp(2.25rem, 2.8125vw + 1.6875rem, 4.5rem);
+  --wp--custom--typography--line-height--huge: clamp(2.5rem, 2.96875vw + 1.90625rem, 4.875rem);
+}
+@media only screen and (max-width: 959px) {
+  .page--about-me-1 .block--text-1 {
+    grid-template-columns: 1fr;
+  }
+}
+.page--about-me-1 .block--text-1 > * {
+  grid-column: 2/span 1;
+}
+@media only screen and (max-width: 959px) {
+  .page--about-me-1 .block--text-1 > * {
+    grid-column: span 1;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .page--about-me-1 .block--text-2 {
+    grid-template-columns: 1fr;
+  }
+}
+.page--about-me-1 .block--text-2 > * {
+  grid-column: 2/span 2;
+}
+@media only screen and (max-width: 959px) {
+  .page--about-me-1 .block--text-2 > * {
+    grid-column: span 1;
+  }
+}
+/*-------------------------------------------------------
 Animations
 -------------------------------------------------------*/
 /*-------------------------------------------------------
