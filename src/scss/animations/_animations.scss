@@ -6,15 +6,22 @@ body.mroya-premium:not(.editor-styles-wrapper) {
 
 	.section--hero-5 .section__block--left .wp-block-heading,
 	.section--hero-5 .section__block--right > *,
+	.section--hero-6 .section__block--left .wp-block-heading,
+	.section--hero-6 .section__block--right > *,
 	.section--about-2 .section__header .wp-block-heading,
 	.section--about-2 .advantages__item,
 	.section--about-2 .block--text > .wp-block-group > *,
 	.section--about-2 .block--text > .wp-block-group > p,
-	.section--information-1 .section__content > * {
+	.section--information-1 .section__content > *,
+	.section--information-2 .section__content > *,
+	.section--booking-1 .section__header .wp-block-heading,
+	.section--booking-1 .amenities__item,
+	.section--booking-1 .block--booking >  * {
 		visibility: hidden;
 	}
 
-	.section--hero-5 .section__block--left .wp-block-heading {
+	.section--hero-5 .section__block--left .wp-block-heading,
+	.section--hero-6 .section__block--left .wp-block-heading {
 
 		.line {
 			margin-bottom: -0.1em;

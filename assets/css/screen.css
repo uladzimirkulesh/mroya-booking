@@ -73,6 +73,37 @@ Section "Hero" (style 5)
   }
 }
 /*-------------------------------------------------------
+Section "Hero" (style 6)
+-------------------------------------------------------*/
+.section--hero-6 .section__content {
+  row-gap: var(--wp--preset--spacing--20);
+}
+@media only screen and (max-width: 959px) {
+  .section--hero-6 .section__content {
+    grid-template-columns: 1fr;
+  }
+}
+.section--hero-6 .section__block--left {
+  --wp--preset--font-size--huge: clamp(1.75rem, 3.5vw + 1.05rem, 5.25rem);
+  --wp--custom--typography--line-height--huge: clamp(2.125rem, 3.375vw + 1.45rem, 5.5rem);
+}
+@media only screen and (max-width: 959px) {
+  .section--hero-6 .section__block--left {
+    padding-right: 0 !important;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .section--hero-6 .section__block--right {
+    padding-top: clamp(10.5rem, 6vw + 9.3rem, 16.5rem);
+  }
+}
+@media only screen and (max-width: 959px) {
+  .section--hero-6 .section__block--right > * {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}
+/*-------------------------------------------------------
 Section "About" (style 2)
 -------------------------------------------------------*/
 @media only screen and (max-width: 781px) {
@@ -99,6 +130,43 @@ Section "About" (style 2)
   }
 }
 /*-------------------------------------------------------
+Section "Booking" (style 1)
+-------------------------------------------------------*/
+@media only screen and (max-width: 781px) {
+  .section--booking-1 .amenities {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 781px) {
+  .section--booking-1 .amenities__item > * {
+    max-width: 100%;
+  }
+}
+.section--booking-1 .amenities__item li:not(:last-child) {
+  padding-bottom: 4px;
+}
+.section--booking-1 .amenities__item li img {
+  vertical-align: center;
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 6px;
+}
+@media only screen and (max-width: 1199px) {
+  .section--booking-1 .block--booking {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .section--booking-1 .block--booking > :nth-child(1) {
+    grid-column: span 1;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section--booking-1 .block--booking > :nth-child(1) {
+    grid-column: span 2;
+  }
+}
+/*-------------------------------------------------------
 Section "Information" (style 1)
 -------------------------------------------------------*/
 .section--information-1 .section__content {
@@ -108,12 +176,6 @@ Section "Information" (style 1)
   .section--information-1 .section__content {
     grid-template-columns: 1fr;
     padding-bottom: var(--wp--preset--spacing--40) !important;
-  }
-}
-@media only screen and (max-width: 1079px) {
-  .section--information-1 .section__content {
-    -moz-column-gap: var(--wp--preset--spacing--20);
-         column-gap: var(--wp--preset--spacing--20);
   }
 }
 @media only screen and (max-width: 781px) {
@@ -148,6 +210,36 @@ Section "Information" (style 1)
   .section--information-1 .block--working-hours {
     grid-column: span 1;
   }
+}
+/*-------------------------------------------------------
+Section "Information" (style 2)
+-------------------------------------------------------*/
+.section--information-2 .section__content {
+  row-gap: var(--wp--preset--spacing--40);
+}
+@media only screen and (max-width: 781px) {
+  .section--information-2 .section__content {
+    grid-template-columns: 1fr;
+    padding-bottom: var(--wp--preset--spacing--40) !important;
+  }
+}
+@media only screen and (max-width: 781px) {
+  .section--information-2 .block--text-left {
+    grid-column: span 1;
+  }
+}
+@media only screen and (min-width: 782px) {
+  .section--information-2 .block--text-left {
+    grid-column: span 2;
+  }
+}
+@media only screen and (max-width: 781px) {
+  .section--information-2 .block--text-left {
+    padding-right: 0 !important;
+  }
+}
+.section--information-2 .block--text-left > * {
+  max-width: 100%;
 }
 /*-------------------------------------------------------
 Booking page (style 1)
@@ -197,17 +289,25 @@ GSAP animations
 -------------------------------------------------------*/
 body.mroya-premium:not(.editor-styles-wrapper) .section--hero-5 .section__block--left .wp-block-heading,
 body.mroya-premium:not(.editor-styles-wrapper) .section--hero-5 .section__block--right > *,
+body.mroya-premium:not(.editor-styles-wrapper) .section--hero-6 .section__block--left .wp-block-heading,
+body.mroya-premium:not(.editor-styles-wrapper) .section--hero-6 .section__block--right > *,
 body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .section__header .wp-block-heading,
 body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .advantages__item,
 body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .block--text > .wp-block-group > *,
 body.mroya-premium:not(.editor-styles-wrapper) .section--about-2 .block--text > .wp-block-group > p,
-body.mroya-premium:not(.editor-styles-wrapper) .section--information-1 .section__content > * {
+body.mroya-premium:not(.editor-styles-wrapper) .section--information-1 .section__content > *,
+body.mroya-premium:not(.editor-styles-wrapper) .section--information-2 .section__content > *,
+body.mroya-premium:not(.editor-styles-wrapper) .section--booking-1 .section__header .wp-block-heading,
+body.mroya-premium:not(.editor-styles-wrapper) .section--booking-1 .amenities__item,
+body.mroya-premium:not(.editor-styles-wrapper) .section--booking-1 .block--booking > * {
   visibility: hidden;
 }
-body.mroya-premium:not(.editor-styles-wrapper) .section__block--left .wp-block-heading .line {
+body.mroya-premium:not(.editor-styles-wrapper) .section--hero-5 .section__block--left .wp-block-heading .line,
+body.mroya-premium:not(.editor-styles-wrapper) .section--hero-6 .section__block--left .wp-block-heading .line {
   margin-bottom: -0.1em;
 }
-body.mroya-premium:not(.editor-styles-wrapper) .section__block--left .wp-block-heading .word {
+body.mroya-premium:not(.editor-styles-wrapper) .section--hero-5 .section__block--left .wp-block-heading .word,
+body.mroya-premium:not(.editor-styles-wrapper) .section--hero-6 .section__block--left .wp-block-heading .word {
   padding-bottom: 0.1em;
 }
 

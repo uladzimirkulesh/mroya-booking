@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"version": 3,
+	"title": "Style 2",
+	"slug": "list-style-2",
+	"blockTypes": [
+		"core/list"
+	],
+	"styles": {
+		"typography": {
+			"lineHeight": "var:style|block-gap"
+		},
+		"spacing": {
+			"padding": {
+				"left": "0"
+			}
+		},
+		"css": "& { list-style-type: none; }"
+	}
+}

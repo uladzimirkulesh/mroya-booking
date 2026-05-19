@@ -22,8 +22,11 @@ Init Animations
 function initAnimations() {
   // Patterns
   _patterns__WEBPACK_IMPORTED_MODULE_0__.sectionHero5();
+  _patterns__WEBPACK_IMPORTED_MODULE_0__.sectionHero6();
   _patterns__WEBPACK_IMPORTED_MODULE_0__.sectionAbout2();
+  _patterns__WEBPACK_IMPORTED_MODULE_0__.sectionBooking1();
   _patterns__WEBPACK_IMPORTED_MODULE_0__.sectionInformation1();
+  _patterns__WEBPACK_IMPORTED_MODULE_0__.sectionInformation2();
 }
 
 /***/ },
@@ -36,13 +39,22 @@ function initAnimations() {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   sectionAbout2: () => (/* reexport safe */ _section_about_2__WEBPACK_IMPORTED_MODULE_1__.sectionAbout2),
+/* harmony export */   sectionAbout2: () => (/* reexport safe */ _section_about_2__WEBPACK_IMPORTED_MODULE_2__.sectionAbout2),
+/* harmony export */   sectionBooking1: () => (/* reexport safe */ _section_booking_1__WEBPACK_IMPORTED_MODULE_3__.sectionBooking1),
 /* harmony export */   sectionHero5: () => (/* reexport safe */ _section_hero_5__WEBPACK_IMPORTED_MODULE_0__.sectionHero5),
-/* harmony export */   sectionInformation1: () => (/* reexport safe */ _section_information_1__WEBPACK_IMPORTED_MODULE_2__.sectionInformation1)
+/* harmony export */   sectionHero6: () => (/* reexport safe */ _section_hero_6__WEBPACK_IMPORTED_MODULE_1__.sectionHero6),
+/* harmony export */   sectionInformation1: () => (/* reexport safe */ _section_information_1__WEBPACK_IMPORTED_MODULE_4__.sectionInformation1),
+/* harmony export */   sectionInformation2: () => (/* reexport safe */ _section_information_2__WEBPACK_IMPORTED_MODULE_5__.sectionInformation2)
 /* harmony export */ });
 /* harmony import */ var _section_hero_5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./section-hero-5 */ "./src/js/animations/patterns/section-hero-5.js");
-/* harmony import */ var _section_about_2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./section-about-2 */ "./src/js/animations/patterns/section-about-2.js");
-/* harmony import */ var _section_information_1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./section-information-1 */ "./src/js/animations/patterns/section-information-1.js");
+/* harmony import */ var _section_hero_6__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./section-hero-6 */ "./src/js/animations/patterns/section-hero-6.js");
+/* harmony import */ var _section_about_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./section-about-2 */ "./src/js/animations/patterns/section-about-2.js");
+/* harmony import */ var _section_booking_1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./section-booking-1 */ "./src/js/animations/patterns/section-booking-1.js");
+/* harmony import */ var _section_information_1__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./section-information-1 */ "./src/js/animations/patterns/section-information-1.js");
+/* harmony import */ var _section_information_2__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./section-information-2 */ "./src/js/animations/patterns/section-information-2.js");
+
+
+
 
 
 
@@ -91,6 +103,46 @@ function sectionAbout2() {
 
 /***/ },
 
+/***/ "./src/js/animations/patterns/section-booking-1.js"
+/*!*********************************************************!*\
+  !*** ./src/js/animations/patterns/section-booking-1.js ***!
+  \*********************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   sectionBooking1: () => (/* binding */ sectionBooking1)
+/* harmony export */ });
+/*-------------------------------------------------------
+Section "Booking" (style 1)
+-------------------------------------------------------*/
+
+function sectionBooking1() {
+  const sections = gsap.utils.toArray('.section--booking-1');
+  sections.forEach(section => {
+    const sectionTitle = section.querySelector('.section__header .wp-block-heading');
+    const amenitiesItems = section.querySelectorAll('.amenities__item');
+    const sectionBlockElements = section.querySelectorAll('.block--booking > *');
+
+    // Let's animate
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionTitle,
+        start: ScrollTrigger.defaults().start,
+        toggleActions: 'play none none none',
+        once: true
+      }
+    });
+
+    // Animations
+    sectionTitle && tl.fadeInUp(sectionTitle);
+    amenitiesItems?.length && tl.fadeInUp(amenitiesItems, '<0.12');
+    sectionBlockElements?.length && tl.fadeInUp(sectionBlockElements, '<0.12');
+  });
+}
+
+/***/ },
+
 /***/ "./src/js/animations/patterns/section-hero-5.js"
 /*!******************************************************!*\
   !*** ./src/js/animations/patterns/section-hero-5.js ***!
@@ -129,6 +181,44 @@ function sectionHero5() {
 
 /***/ },
 
+/***/ "./src/js/animations/patterns/section-hero-6.js"
+/*!******************************************************!*\
+  !*** ./src/js/animations/patterns/section-hero-6.js ***!
+  \******************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   sectionHero6: () => (/* binding */ sectionHero6)
+/* harmony export */ });
+/*-------------------------------------------------------
+Section "Hero" (style 6)
+-------------------------------------------------------*/
+
+function sectionHero6() {
+  const sections = gsap.utils.toArray('.section--hero-6');
+  sections.forEach(section => {
+    const sectionTitle = section.querySelector('.section__block--left .wp-block-heading');
+    const sectionElements = section.querySelectorAll('.section__block--right > *');
+
+    // Let's animate
+    const tl = gsap.timeline({
+      delay: 0.3
+    });
+    sectionTitle && tl.set(sectionTitle, {
+      autoAlpha: 1
+    });
+
+    // Animations
+    sectionTitle && tl.splitTextLinesMask(sectionTitle, {
+      revert: false
+    });
+    sectionElements?.length && tl.fadeInUp(sectionElements, '<0.42');
+  });
+}
+
+/***/ },
+
 /***/ "./src/js/animations/patterns/section-information-1.js"
 /*!*************************************************************!*\
   !*** ./src/js/animations/patterns/section-information-1.js ***!
@@ -145,6 +235,42 @@ Section "Information" (style 1)
 
 function sectionInformation1() {
   const sections = gsap.utils.toArray('.section--information-1');
+  sections.forEach(section => {
+    const sectionBlocks = section.querySelectorAll('.section__content > *');
+
+    // Let's animate
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: section,
+        start: ScrollTrigger.defaults().start,
+        toggleActions: 'play none none none',
+        once: true
+      }
+    });
+
+    // Blocks animations
+    sectionBlocks?.length && tl.fadeInUp(sectionBlocks, '<0.12');
+  });
+}
+
+/***/ },
+
+/***/ "./src/js/animations/patterns/section-information-2.js"
+/*!*************************************************************!*\
+  !*** ./src/js/animations/patterns/section-information-2.js ***!
+  \*************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   sectionInformation2: () => (/* binding */ sectionInformation2)
+/* harmony export */ });
+/*-------------------------------------------------------
+Section "Information" (style 2)
+-------------------------------------------------------*/
+
+function sectionInformation2() {
+  const sections = gsap.utils.toArray('.section--information-2');
   sections.forEach(section => {
     const sectionBlocks = section.querySelectorAll('.section__content > *');
 

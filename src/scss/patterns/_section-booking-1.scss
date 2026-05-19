@@ -1,0 +1,57 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+Section "Booking" (style 1)
+-------------------------------------------------------*/
+
+.section--booking-1 {
+
+	.amenities {
+
+		@include mixins.media("break-medium", max) {
+			grid-template-columns: 1fr;
+		}
+
+		&__item {
+
+			> * {
+
+				@include mixins.media("break-medium", max) {
+					max-width: 100%;
+				}
+			}
+
+			li {
+
+				&:not(:last-child) {
+					padding-bottom: 4px;
+				}
+
+				img {
+					vertical-align: center;
+					width: 20px !important;
+					height: 20px !important;
+					margin-right: 6px;
+				}
+			}
+		}
+	}
+
+	.block--booking {
+
+		@include mixins.media("break-wide", max) {
+			grid-template-columns: 1fr;
+		}
+
+		> :nth-child(1) {
+
+			@include mixins.media("break-wide", max) {
+				grid-column: span 1;
+			}
+
+			@include mixins.media("break-wide") {
+				grid-column: span 2;
+			}
+		}
+	}
+}
