@@ -13,5 +13,5 @@
 ?>
 <!-- wp:pattern {"slug":"mroya-booking/section-hero-5"} /-->
 <!-- wp:pattern {"slug":"mroya/section-cover-1"} /-->
-<!-- wp:pattern {"slug":"mroya-booking/section-booking-1"} /-->
+<!-- wp:pattern {"slug":"mroya-booking/section-about-2"} /-->
 <!-- wp:pattern {"slug":"mroya-booking/section-information-1"} /-->
