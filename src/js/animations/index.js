@@ -12,4 +12,5 @@ export function initAnimations() {
 	Patterns.sectionBooking1();
 	Patterns.sectionInformation1();
 	Patterns.sectionInformation2();
+	Patterns.sectionGallery1();
 }

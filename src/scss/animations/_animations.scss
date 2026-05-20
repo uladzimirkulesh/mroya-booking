@@ -16,7 +16,8 @@ body.mroya-premium:not(.editor-styles-wrapper) {
 	.section--information-2 .section__content > *,
 	.section--booking-1 .section__header .wp-block-heading,
 	.section--booking-1 .amenities__item,
-	.section--booking-1 .block--booking >  * {
+	.section--booking-1 .block--booking >  *,
+	.section--gallery-1 .wp-block-gallery .wp-block-image {
 		visibility: hidden;
 	}
 

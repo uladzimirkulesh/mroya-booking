@@ -1,0 +1,53 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+Gallery (style 1)
+-------------------------------------------------------*/
+
+.wp-block-gallery.is-style-gallery-style-1.columns-4 {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+
+	@include mixins.media("break-medium") {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	figure.wp-block-image:not(#individual-image) {
+		width: 100%;
+
+		&:nth-child(1) {
+			grid-column: span 3;
+
+			@include mixins.media("break-medium") {
+				grid-column: span 2;
+				grid-row: span 2;
+			}
+
+			> img {
+
+				@include mixins.media("break-medium", max) {
+					aspect-ratio: 4 / 3 !important;
+				}
+			}
+		}
+
+		&:nth-child(4) {
+			grid-column: span 1;
+
+			@include mixins.media("break-medium") {
+				grid-column: span 2;
+			}
+
+			> img {
+
+				@include mixins.media("break-medium") {
+					aspect-ratio: 2 / 1 !important;
+				}
+			}
+		}
+
+		> img {
+			opacity: inherit;
+		}
+	}
+}
