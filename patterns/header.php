@@ -24,7 +24,7 @@
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:navigation {"overlayBackgroundColor":"contrast","overlayTextColor":"base","style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"flex","justifyContent":"right","flexWrap":"nowrap"}} /-->
+		<!-- wp:navigation {"overlayBackgroundColor":"accent-4","style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"flex","justifyContent":"right","flexWrap":"nowrap"}} /-->
 	</div>
 	<!-- /wp:group -->
 </div>

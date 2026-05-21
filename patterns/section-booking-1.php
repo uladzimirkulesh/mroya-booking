@@ -32,35 +32,15 @@
 				<!-- wp:list {"className":"is-style-list-style-2"} -->
 				<ul class="wp-block-list is-style-list-style-2">
 					<!-- wp:list-item -->
-					<li><?php echo esc_html_x( 'Nähe zum Stadtzentrum', 'List item text', 'mroya-booking' ); ?></li>
+					<li><img style="width: 24px;" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/home_work.png' ); ?>" alt=""><?php echo esc_html_x( 'Nähe zum Stadtzentrum', 'List item text', 'mroya-booking' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item -->
-					<li><?php echo esc_html_x( 'ÖV & Autobahn', 'List item text', 'mroya-booking' ); ?></li>
+					<li><img style="width: 24px;" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/directions_bus.png' ); ?>" alt=""><?php echo esc_html_x( 'ÖV & Autobahn', 'List item text', 'mroya-booking' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item -->
-					<li><?php echo esc_html_x( 'Öffentliche Parkplätze', 'List item text', 'mroya-booking' ); ?></li>
-					<!-- /wp:list-item -->
-				</ul>
-				<!-- /wp:list -->
-			</div>
-			<!-- /wp:group -->
-
-			<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Item', 'Name for the section amenities item area', 'mroya-booking' ); ?>"},"className":"amenities__item","style":{"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem","left":"2rem"}},"border":{"left":{"color":"var:preset|color|accent-6","style":"solid","width":"2px"},"top":{},"right":{},"bottom":{}}},"layout":{"type":"constrained","contentSize":"340px","justifyContent":"left","wideSize":"100%"}} -->
-			<div class="wp-block-group amenities__item" style="border-left-color:var(--wp--preset--color--accent-6);border-left-style:solid;border-left-width:2px;padding-top:0.5rem;padding-bottom:0.5rem;padding-left:2rem">
-				<!-- wp:list {"className":"is-style-list-style-2"} -->
-				<ul class="wp-block-list is-style-list-style-2">
-					<!-- wp:list-item -->
-					<li><?php echo esc_html_x( 'Barrierefrei', 'List item text', 'mroya-booking' ); ?></li>
-					<!-- /wp:list-item -->
-
-					<!-- wp:list-item -->
-					<li><?php echo esc_html_x( 'Fahrstuhl', 'List item text', 'mroya-booking' ); ?></li>
-					<!-- /wp:list-item -->
-
-					<!-- wp:list-item -->
-					<li><?php echo esc_html_x( 'Terrasse', 'List item text', 'mroya-booking' ); ?></li>
+					<li><img style="width: 24px;" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/local_parking.png' ); ?>" alt=""><?php echo esc_html_x( 'Öffentliche Parkplätze', 'List item text', 'mroya-booking' ); ?></li>
 					<!-- /wp:list-item -->
 				</ul>
 				<!-- /wp:list -->
@@ -72,11 +52,35 @@
 				<!-- wp:list {"className":"is-style-list-style-2"} -->
 				<ul class="wp-block-list is-style-list-style-2">
 					<!-- wp:list-item -->
-					<li><?php echo esc_html_x( 'Flipchart', 'List item text', 'mroya-booking' ); ?></li>
+					<li><img style="width: 24px;" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/accessible.png' ); ?>" alt=""><?php echo esc_html_x( 'Barrierefrei', 'List item text', 'mroya-booking' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item -->
-					<li><?php echo esc_html_x( 'Grosser Bildschirm', 'List item text', 'mroya-booking' ); ?></li>
+					<li><img style="width: 24px;" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/elevator.png' ); ?>" alt=""><?php echo esc_html_x( 'Fahrstuhl', 'List item text', 'mroya-booking' ); ?></li>
+					<!-- /wp:list-item -->
+
+					<!-- wp:list-item -->
+					<li><img style="width: 24px;" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/deck.png' ); ?>" alt=""><?php echo esc_html_x( 'Terrasse', 'List item text', 'mroya-booking' ); ?></li>
+					<!-- /wp:list-item -->
+				</ul>
+				<!-- /wp:list -->
+			</div>
+			<!-- /wp:group -->
+
+			<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Item', 'Name for the section amenities item area', 'mroya-booking' ); ?>"},"className":"amenities__item","style":{"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem","left":"2rem"}},"border":{"left":{"color":"var:preset|color|accent-6","style":"solid","width":"2px"},"top":{},"right":{},"bottom":{}}},"layout":{"type":"constrained","contentSize":"340px","justifyContent":"left","wideSize":"100%"}} -->
+			<div class="wp-block-group amenities__item" style="border-left-color:var(--wp--preset--color--accent-6);border-left-style:solid;border-left-width:2px;padding-top:0.5rem;padding-bottom:0.5rem;padding-left:2rem">
+				<!-- wp:list {"className":"is-style-list-style-2"} -->
+				<ul class="wp-block-list is-style-list-style-2">
+					<!-- wp:list-item -->
+					<li><img style="width: 24px;" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/content_paste.png' ); ?>" alt=""><?php echo esc_html_x( 'Flipchart', 'List item text', 'mroya-booking' ); ?></li>
+					<!-- /wp:list-item -->
+
+					<!-- wp:list-item -->
+					<li><img style="width: 24px;" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/desktop_mac.png' ); ?>" alt=""><?php echo esc_html_x( 'Grosser Bildschirm', 'List item text', 'mroya-booking' ); ?></li>
+					<!-- /wp:list-item -->
+
+					<!-- wp:list-item -->
+					<li><img style="width: 24px;" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/local_dining.png' ); ?>" alt=""><?php echo esc_html_x( 'Catering auf Anfrage', 'List item text', 'mroya-booking' ); ?></li>
 					<!-- /wp:list-item -->
 				</ul>
 				<!-- /wp:list -->

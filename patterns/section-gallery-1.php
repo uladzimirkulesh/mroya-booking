@@ -18,19 +18,19 @@
 	<!-- wp:gallery {"columns":4,"linkTo":"lightbox","aspectRatio":"1","align":"wide","className":"is-style-gallery-style-1","style":{"spacing":{"blockGap":{"top":"0.75rem","left":"0.75rem"}}}} -->
 	<figure class="wp-block-gallery alignwide has-nested-images columns-4 is-cropped is-style-gallery-style-1">
 		<!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"1","sizeSlug":"large","linkDestination":"none"} -->
-		<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/placeholder.webp" alt="" style="aspect-ratio:1"/></figure>
+		<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/placeholder.webp' ); ?>" alt="" style="aspect-ratio:1"/></figure>
 		<!-- /wp:image -->
 
 		<!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"1","sizeSlug":"large","linkDestination":"none"} -->
-		<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/placeholder.webp" alt="" style="aspect-ratio:1"/></figure>
+		<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/placeholder.webp' ); ?>" alt="" style="aspect-ratio:1"/></figure>
 		<!-- /wp:image -->
 
 		<!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"1","sizeSlug":"large","linkDestination":"none"} -->
-		<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/placeholder.webp" alt="" style="aspect-ratio:1"/></figure>
+		<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/placeholder.webp' ); ?>" alt="" style="aspect-ratio:1"/></figure>
 		<!-- /wp:image -->
 
 		<!-- wp:image {"lightbox":{"enabled":true},"aspectRatio":"1","sizeSlug":"large","linkDestination":"none"} -->
-		<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/placeholder.webp" alt="" style="aspect-ratio:1"/></figure>
+		<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/placeholder.webp' ); ?>" alt="" style="aspect-ratio:1"/></figure>
 		<!-- /wp:image -->
 	</figure>
 	<!-- /wp:gallery -->
