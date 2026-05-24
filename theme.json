@@ -120,6 +120,125 @@
 		}
 	},
 	"styles": {
+		"blocks": {
+			"core/post-date": {
+				"color": {
+					"text": "var:preset|color|contrast-3"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|font-primary",
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "500",
+					"lineHeight": "var:custom|typography|line-height|small",
+					"letterSpacing": "var:custom|typography|letter-spacing|small",
+					"textTransform": "none"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "currentColor"
+						},
+						"typography": {
+							"textDecoration": "underline"
+						},
+						":focus": {
+							"typography": {
+								"textDecoration": "underline dotted"
+							}
+						},
+						"css": "& { display: inline-block; } &:hover { text-decoration-color: transparent; } &:active { text-decoration-color: transparent; }"
+					}
+				}
+			},
+			"core/post-terms": {
+				"color": {
+					"text": "var:preset|color|accent-5"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|font-primary",
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "500",
+					"lineHeight": "var:custom|typography|line-height|small",
+					"letterSpacing": "var:custom|typography|letter-spacing|small",
+					"textTransform": "none"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "currentColor"
+						},
+						"typography": {
+							"textDecoration": "underline"
+						},
+						":focus": {
+							"typography": {
+								"textDecoration": "underline dotted"
+							}
+						},
+						"css": "&:hover { text-decoration-color: transparent; } &:active { text-decoration-color: transparent; }"
+					}
+				},
+				"css": "& > * { display: inline-block; }"
+			},
+			"core/comment-date": {
+				"color": {
+					"text": "var:preset|color|contrast-3"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|font-primary",
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "500",
+					"lineHeight": "var:custom|typography|line-height|small",
+					"letterSpacing": "var:custom|typography|letter-spacing|small",
+					"textTransform": "none"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "currentColor"
+						},
+						"typography": {
+							"textDecoration": "underline"
+						},
+						":focus": {
+							"typography": {
+								"textDecoration": "underline dotted"
+							}
+						},
+						"css": "&:hover { text-decoration-color: transparent; } &:active { text-decoration-color: transparent; }"
+					}
+				}
+			},
+			"core/comment-edit-link": {
+				"color": {
+					"text": "var:preset|color|contrast-3"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|font-primary",
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "500",
+					"lineHeight": "var:custom|typography|line-height|small",
+					"letterSpacing": "var:custom|typography|letter-spacing|small",
+					"textTransform": "none"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "currentColor"
+						},
+						"typography": {
+							"textDecoration": "underline"
+						},
+						":focus": {
+							"typography": {
+								"textDecoration": "underline dotted"
+							}
+						},
+						"css": "&:hover { text-decoration-color: transparent; } &:active { text-decoration-color: transparent; }"
+					}
+				}
+			}
+		},
 		"elements": {
 			"button": {
 				"color": {
