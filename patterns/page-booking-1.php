@@ -8,6 +8,9 @@
  * Post Types: page
  * Description: Booking page with information text and widget.
  * Viewport width: 1440
+ *
+ * @package Mroya Booking
+ * @since Mroya Booking 1.0.0
  */
 
 ?>

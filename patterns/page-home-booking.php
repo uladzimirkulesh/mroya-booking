@@ -8,6 +8,9 @@
  * Post Types: page, wp_template
  * Description: Booking homepage pattern.
  * Viewport width: 1440
+ *
+ * @package Mroya Booking
+ * @since Mroya Booking 1.0.0
  */
 
 ?>

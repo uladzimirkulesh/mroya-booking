@@ -2,7 +2,7 @@
 /**
  * Title: Booking section (style 1)
  * Slug: mroya-booking/section-booking-1
- * Categories: mroya_sections_about
+ * Categories: mroya_sections_other
  * Description: Displays booking section.
  * Keywords: section, booking
  * Post Types: page, wp_template

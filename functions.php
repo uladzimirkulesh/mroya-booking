@@ -75,3 +75,21 @@ function mroya_booking_remove_magic_cursor() {
 	);
 }
 add_action( 'after_setup_theme', 'mroya_booking_remove_magic_cursor', 20 );
+
+/**
+ * Registers block pattern categories.
+ *
+ * @since Mroya Booking 1.0.0
+ *
+ * @return void
+ */
+function mroya_booking_register_block_pattern_categories() {
+	register_block_pattern_category(
+		'mroya_sections_other',
+		array(
+			'label'       => esc_html__( 'Sections (Other)', 'mroya-booking' ),
+			'description' => esc_html__( 'A collection of other section patterns.', 'mroya-booking' ),
+		)
+	);
+}
+add_action( 'init', 'mroya_booking_register_block_pattern_categories', 9 );

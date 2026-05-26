@@ -2,7 +2,7 @@
 /**
  * Title: Information section (style 1)
  * Slug: mroya-booking/section-information-1
- * Categories: mroya_sections_about
+ * Categories: mroya_sections_other
  * Description: Displays map and working hours.
  * Keywords: section, about, adress, working hours
  * Post Types: page, wp_template

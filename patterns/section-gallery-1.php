@@ -2,7 +2,7 @@
 /**
  * Title: Gallery section (style 1)
  * Slug: mroya-booking/section-gallery-1
- * Categories: mroya_sections_cover
+ * Categories: mroya_sections_other
  * Description: Displays gallery.
  * Keywords: section, gallery
  * Post Types: page, wp_template

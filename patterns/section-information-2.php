@@ -2,9 +2,9 @@
 /**
  * Title: Information section (style 2)
  * Slug: mroya-booking/section-information-2
- * Categories: mroya_sections_about
- * Description: Displays map and working hours.
- * Keywords: section, about, adress, working hours
+ * Categories: mroya_sections_other
+ * Description: Displays text blocks.
+ * Keywords: section, information
  * Post Types: page, wp_template
  * Viewport width: 1440
  *
@@ -14,7 +14,7 @@
 
 ?>
 <!-- wp:group {"tagName":"section","metadata":{"name":"<?php echo esc_html_x( 'Information (style 2)', 'Name for the Information section pattern', 'mroya-booking' ); ?>"},"align":"full","className":"section section--information-2","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70","top":"2rem"},"margin":{"top":"0"},"blockGap":"var:preset|spacing|20"}},"backgroundColor":"accent-4","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull section section--information-2 has-accent-4-background-color has-background" id="section-information-1" style="margin-top:0;padding-top:2rem;padding-bottom:var(--wp--preset--spacing--70)">
+<section class="wp-block-group alignfull section section--information-2 has-accent-4-background-color has-background" id="section-information-2" style="margin-top:0;padding-top:2rem;padding-bottom:var(--wp--preset--spacing--70)">
 	<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Content', 'Name for the section content area', 'mroya-booking' ); ?>"},"align":"wide","className":"section__content","layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
 	<div class="wp-block-group alignwide section__content">
 		<!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Text block (left)', 'Name for the text block area', 'mroya-booking' ); ?>"},"className":"block--text-left","style":{"layout":{"columnSpan":2},"spacing":{"padding":{"right":"var:preset|spacing|20"}}},"layout":{"type":"default"}} -->
