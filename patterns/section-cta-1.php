@@ -25,8 +25,8 @@
 
 			<!-- wp:column {"width":"100%"} -->
 			<div class="wp-block-column" style="flex-basis:100%">
-				<!-- wp:group {"style":{"layout":{"columnSpan":2},"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
-				<div class="wp-block-group">
+				<!-- wp:group {"className":"block--text","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
+				<div class="wp-block-group block--text">
 					<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"xxx-large"} -->
 					<p class="has-xxx-large-font-size" style="font-style:normal;font-weight:500"><?php echo esc_html_x( 'Warum fühlen sich manche Workshops leicht, inspirierend und verbindend an — und andere nicht? Gedanken über das Design von Events, Atmosphäre und echte Begegnung im Journal.', 'CTA section main text', 'mroya-booking' ); ?></p>
 					<!-- /wp:paragraph -->

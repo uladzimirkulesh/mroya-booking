@@ -17,12 +17,21 @@ body.mroya-premium:not(.editor-styles-wrapper) {
 	.section--booking-1 .section__header .wp-block-heading,
 	.section--booking-1 .amenities__item,
 	.section--booking-1 .block--booking >  *,
-	.section--gallery-1 .wp-block-gallery .wp-block-image {
+	.section--gallery-1 .wp-block-gallery .wp-block-image,
+	.section--hero-7 .wp-block-heading,
+	.section--image-1 .wp-block-image,
+	.section--cta-1 .block--text > *,
+	.section--cta-1 .block--text > p,
+	.section--about-me-1 .block--text .wp-block-heading,
+	.section--about-me-1 .block--text .section__text,
+	.section--about-me-1 .block--skills > .wp-block-heading,
+	.section--about-me-1 .block--skills .skills-list__item {
 		visibility: hidden;
 	}
 
 	.section--hero-5 .section__block--left .wp-block-heading,
-	.section--hero-6 .section__block--left .wp-block-heading {
+	.section--hero-6 .section__block--left .wp-block-heading,
+	.section--hero-7 .wp-block-heading {
 
 		.line {
 			margin-bottom: -0.1em;
@@ -31,5 +40,19 @@ body.mroya-premium:not(.editor-styles-wrapper) {
 		.word {
 			padding-bottom: 0.1em;
 		}
+	}
+
+	.section--image-1 .wp-block-image img {
+		opacity: inherit;
+	}
+
+	.section--about-me-1 .block--skills .skills-list__separator {
+		width: 0;
+		margin-left: 0;
+	}
+
+	.section--about-me-1 .block--skills > .wp-block-heading,
+	.section--about-me-1 .block--skills .skills-list__item {
+		transform: translate(-3rem);
 	}
 }

@@ -5,3 +5,7 @@ export { sectionBooking1 } from './section-booking-1';
 export { sectionInformation1 } from './section-information-1';
 export { sectionInformation2 } from './section-information-2';
 export { sectionGallery1 } from './section-gallery-1';
+export { sectionHero7 } from './section-hero-7';
+export { sectionImage1 } from './section-image-1';
+export { sectionAboutMe1 } from './section-about-me-1';
+export { sectionCta1 } from './section-cta-1';

@@ -15,8 +15,8 @@
 ?>
 <!-- wp:group {"metadata":{"name":"<?php echo esc_html_x( 'Blog page header (style 1)', 'Name for the Blog page header pattern', 'mroya' ); ?>"},"align":"wide","className":"page-header__inner--blog-1","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide page-header__inner--blog-1">
-	<!-- wp:heading {"level":1,"align":"wide","className":"is-style-text-giant page-header__title"} -->
-	<h1 class="wp-block-heading alignwide is-style-text-giant page-header__title"><?php echo wp_kses_post( _x( 'Nur mit Aussicht.<br>Gedanken darüber, wie…', 'Blog page header title', 'mroya' ) ); ?></h1>
+	<!-- wp:heading {"level":1,"align":"wide","className":"page-header__title","fontSize":"huge"} -->
+	<h1 class="wp-block-heading alignwide page-header__title has-huge-font-size"><?php echo wp_kses_post( _x( 'Nur mit Aussicht.<br>Gedanken darüber, wie…', 'Blog page header title', 'mroya' ) ); ?></h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:group {"align":"wide","layout":{"type":"constrained","contentSize":"480px","wideSize":"100%","justifyContent":"left"}} -->

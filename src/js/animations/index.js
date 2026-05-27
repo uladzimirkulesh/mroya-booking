@@ -13,4 +13,8 @@ export function initAnimations() {
 	Patterns.sectionInformation1();
 	Patterns.sectionInformation2();
 	Patterns.sectionGallery1();
+	Patterns.sectionHero7();
+	Patterns.sectionImage1();
+	Patterns.sectionAboutMe1();
+	Patterns.sectionCta1();
 }

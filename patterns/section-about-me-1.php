@@ -25,8 +25,8 @@
 
 			<!-- wp:column {"width":"100%"} -->
 			<div class="wp-block-column" style="flex-basis:100%">
-				<!-- wp:group {"layout":{"type":"default"}} -->
-				<div class="wp-block-group">
+				<!-- wp:group {"className":"block--text","layout":{"type":"default"}} -->
+				<div class="wp-block-group block--text">
 					<!-- wp:heading {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|accent-5"}}}},"textColor":"accent-5","fontSize":"normal"} -->
 					<h2 class="wp-block-heading is-style-default has-accent-5-color has-text-color has-link-color has-normal-font-size"><?php echo esc_html_x( 'Mein Warum', 'About me section title', 'mroya-booking' ); ?></h2>
 					<!-- /wp:heading -->

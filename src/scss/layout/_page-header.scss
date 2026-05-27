@@ -1,0 +1,11 @@
+/*-------------------------------------------------------
+Page Header
+-------------------------------------------------------*/
+
+.page-header {
+
+	&__title {
+		--wp--preset--font-size--huge: clamp(1.75rem, 3.5vw + 1.05rem, 5.25rem);
+		--wp--custom--typography--line-height--huge: clamp(2.125rem, 3.375vw + 1.45rem, 5.5rem);
+	}
+}
