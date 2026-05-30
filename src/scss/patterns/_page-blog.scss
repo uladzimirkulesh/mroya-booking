@@ -30,3 +30,21 @@ Blog page
 		}
 	}
 }
+
+// Entry footer
+.entry:has(.entry-content .content-has-nav) > .entry-footer {
+
+	@include mixins.media("break-medium") {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 1.5rem;
+	}
+
+	> * {
+
+		@include mixins.media("break-medium") {
+			grid-column: 2 / span 3;
+			margin-left: 0 !important;
+		}
+	}
+}
