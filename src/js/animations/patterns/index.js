@@ -9,3 +9,4 @@ export { sectionHero7 } from './section-hero-7';
 export { sectionImage1 } from './section-image-1';
 export { sectionAboutMe1 } from './section-about-me-1';
 export { sectionCta1 } from './section-cta-1';
+export { pageBlog } from './page-blog';
