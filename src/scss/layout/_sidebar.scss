@@ -1,0 +1,14 @@
+@use "../tools/mixins";
+
+/*-------------------------------------------------------
+Sidebar
+-------------------------------------------------------*/
+
+/*
+Sidebar opener
+*/
+
+.sidebar-opener {
+	color: var(--wp--preset--color--contrast);
+	background-color: var(--wp--preset--color--accent-4);
+}
