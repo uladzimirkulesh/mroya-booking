@@ -15,6 +15,6 @@
 
 ?>
 <!-- wp:pattern {"slug":"mroya-booking/section-hero-6"} /-->
-<!-- wp:pattern {"slug":"mroya-booking/section-gallery-1"} /-->
+<!-- wp:pattern {"slug":"mroya-booking/section-slider-1"} /-->
 <!-- wp:pattern {"slug":"mroya-booking/section-booking-1"} /-->
 <!-- wp:pattern {"slug":"mroya-booking/section-information-2"} /-->

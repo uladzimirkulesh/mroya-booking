@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mroya Booking\n"
 "Report-Msgid-Bugs-To: https://mroya.eu\n"
-"POT-Creation-Date: 2026-06-01 15:44+0000\n"
+"POT-Creation-Date: 2026-06-03 16:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Uladzimir Kulesh <hello@mroya.eu>\n"
 "Language-Team: Uladzimir Kulesh <hello@mroya.eu>\n"
@@ -491,6 +491,11 @@ msgctxt "Name for the skills list area"
 msgid "Skills list"
 msgstr ""
 
+#: patterns/section-slider-1.php:16
+msgctxt "Name for the Slider section pattern"
+msgid "Slider section (style 1)"
+msgstr ""
+
 #: patterns/section-about-2.php:68
 msgctxt "Name for the text block area"
 msgid "Text Block"
@@ -534,6 +539,11 @@ msgstr ""
 #: patterns/header.php:2
 msgctxt "Pattern description"
 msgid "Default header section."
+msgstr ""
+
+#: patterns/section-slider-1.php:2
+msgctxt "Pattern description"
+msgid "Displays a responsive slider."
 msgstr ""
 
 #: patterns/section-about-2.php:2
@@ -685,6 +695,15 @@ msgstr ""
 #: patterns/section-information-2.php:2
 msgctxt "Pattern title"
 msgid "Information section (style 2)"
+msgstr ""
+
+#: patterns/section-slider-1.php:2
+msgctxt "Pattern title"
+msgid "Slider section (style 1)"
+msgstr ""
+
+#: inc/theme-required-plugins.php:22
+msgid "Responsive Slider Gallery"
 msgstr ""
 
 #: functions.php:90

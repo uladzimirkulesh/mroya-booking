@@ -18,4 +18,5 @@ export function initAnimations() {
 	Patterns.sectionAboutMe1();
 	Patterns.sectionCta1();
 	Patterns.pageBlog();
+	Patterns.sectionSlider1();
 }

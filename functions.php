@@ -93,3 +93,6 @@ function mroya_booking_register_block_pattern_categories() {
 	);
 }
 add_action( 'init', 'mroya_booking_register_block_pattern_categories', 9 );
+
+// Load TGM Plugin Activation file.
+require_once get_stylesheet_directory() . '/inc/theme-required-plugins.php';
